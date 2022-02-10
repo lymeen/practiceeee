@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script>
+        function Complete1()
+        {
+            if(document.ffff.Pwr.value==document.ffff.Pwr1.value)
+                alert("You have successfully registered\n Name="+ document.ffff.Name.value+"\n Password="+document.ffff.Pwd.value);
+            else
+                alert("Password error, you should try again");
+        }
+        
+    </script>
+</head>
+
+<body>
+<H1>Registeration form</H1>
+
+<FORM NAME="ffff">
+    <TABLE>
+        <TR><TD><B>Nickname:</B></TD>
+            <TD><INPUT NAME="Name" SIZE=30
+                       onBlur="this.value=this.value.toUpperCase()"></TD></TR>
+        <TR><TD><B>Password:</B></TD>
+            <TD><INPUT TYPE="password" NAME="Pwr" SIZE=20
+                       onFocus="this.select();"></TD></TR>
+        <TR><TD><B>Write Password again:</B></TD>
+            <TD><INPUT TYPE="password" NAME="Pwr1" SIZE=20
+                       onFocus="this.select();"></TD></TR>
+    </TABLE>
+
+    <INPUT TYPE="button" VALUE="Click" onClick="Complete1();">
+</FORM>
+</body>
+</html>
